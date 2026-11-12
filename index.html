@@ -22,12 +22,22 @@
     .events{padding-top:12px}.event-days{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;margin-top:42px}.day-card{padding:25px;border:1px solid rgba(189,119,69,.42);background:rgba(255,248,234,.62)}.day-heading{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding-bottom:16px;border-bottom:1px solid rgba(189,119,69,.36)}.day-heading h3{margin:0;color:var(--maroon);font:500 22px var(--serif)}.day-heading span{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.event{display:grid;grid-template-columns:75px 1fr;gap:14px;padding:18px 0 0}.event-time{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.08em}.event h4{margin:0;color:var(--maroon);font:500 17px var(--serif)}.event h4 span{margin-left:7px;color:#a98370;font:13px var(--serif)}.event p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
     .venue-card{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;margin-top:42px;padding:clamp(25px,5vw,47px);border:1px solid rgba(189,119,69,.5);background:rgba(255,248,234,.62)}.venue-card h3{margin:0 0 9px;color:var(--maroon);font:500 clamp(22px,3.5vw,31px) var(--serif)}.venue-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}.map-link{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--maroon);padding:13px 18px;color:var(--maroon);text-decoration:none;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s}.map-link:hover{background:var(--maroon);color:var(--peach-light)}
     .closing{padding:0 0 72px;text-align:center}.closing .script{margin:0;color:var(--maroon);font:400 clamp(50px,9vw,86px)/1 var(--script)}.closing p{margin:12px 0 0;color:var(--muted);font:14px var(--serif)}.closing .small-date{margin-top:24px;color:var(--gold);font:700 9px var(--sans);letter-spacing:.18em;text-transform:uppercase}.footer{padding:22px 0 27px;border-top:1px solid rgba(116,24,51,.2);color:#704a4c;font-size:10px;letter-spacing:.04em;text-align:center}
-    .music-modal{position:fixed;inset:0;z-index:20;display:none;place-items:center;padding:20px;background:rgba(51,13,29,.72);backdrop-filter:blur(7px)}.music-modal.open{display:grid}.music-box{position:relative;width:min(520px,100%);padding:20px;border:1px solid var(--gold-light);background:var(--peach-light);box-shadow:0 20px 70px rgba(0,0,0,.24)}.music-box h2{margin:0 34px 14px 0;color:var(--maroon);font:500 20px var(--serif)}.music-box p{margin:13px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.music-box iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#1d0d13}.music-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border:1px solid rgba(116,24,51,.3);border-radius:50%;background:transparent;color:var(--maroon);font-size:17px;cursor:pointer}
-    @media(max-width:680px){.site-shell{width:min(100% - 24px,550px)}.nav{min-height:67px;flex-wrap:wrap;padding:9px 0}.monogram{font-size:36px}.nav-links{gap:15px}.nav-links a{font-size:9px;letter-spacing:.09em}.music-button{padding:7px 10px;font-size:0}.music-button .music-icon{font-size:12px}.hero{min-height:min(815px,calc(100svh - 67px));padding:42px 15px 72px}.hero-card{padding:48px 18px 42px;outline-offset:5px}.overline{letter-spacing:.22em;font-size:9px}.hero h1{font-size:clamp(58px,16vw,85px)}.hero h1 span{font-size:20px}.ganesh{font-size:14px}.time-unit{min-width:0;flex:1;padding:12px 6px 10px}.time-label{font-size:8px;letter-spacing:.1em}.families{grid-template-columns:1fr;gap:0;margin-top:28px}.family{padding:11px 0}.family-divider{font-size:27px;line-height:1}.event-days{grid-template-columns:1fr}.venue-card{grid-template-columns:1fr}.map-link{justify-content:center}.section{padding:62px 0}.paper-panel{padding:37px 20px}.closing{padding-bottom:55px}}
+    .entry-screen{position:fixed;inset:0;z-index:30;display:grid;place-items:center;overflow:hidden;padding:22px;background:var(--peach);transition:opacity .65s ease,transform .65s ease}.entry-screen:before,.entry-screen:after{content:"";position:absolute;width:54vw;height:54vw;min-width:310px;min-height:310px;background:var(--maroon);opacity:.97}.entry-screen:before{top:-30vw;right:-20vw;border-radius:0 0 0 100%;transform:rotate(8deg)}.entry-screen:after{bottom:-34vw;left:-22vw;border-radius:0 100% 0 0;transform:rotate(-6deg)}.entry-screen.opening{opacity:0;transform:scale(1.035);pointer-events:none}.entry-screen[hidden]{display:none}.entry-card{position:relative;z-index:1;width:min(500px,100%);padding:45px 25px 38px;border:1px solid rgba(189,119,69,.8);outline:1px solid rgba(189,119,69,.45);outline-offset:7px;background:rgba(255,238,216,.97);text-align:center;box-shadow:0 26px 80px rgba(87,27,41,.2)}.entry-card .ganesh{margin-bottom:16px}.entry-card .overline{letter-spacing:.24em}.entry-title{margin:15px 0 5px;color:var(--maroon);font:400 clamp(48px,10vw,73px)/1 var(--script)}.entry-date{margin:12px 0 0;color:var(--muted);font:500 12px var(--serif);letter-spacing:.12em;text-transform:uppercase}.entry-open{display:flex;flex-direction:column;align-items:center;gap:9px;margin:25px auto 0;padding:0;border:0;background:transparent;color:var(--maroon);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}.entry-seal{display:grid;place-items:center;width:55px;height:55px;border:1px solid var(--gold);border-radius:50%;background:var(--maroon);color:var(--peach-light);font:24px var(--serif);box-shadow:inset 0 0 0 4px var(--maroon),inset 0 0 0 5px rgba(224,170,112,.7);transition:transform .2s}.entry-open:hover .entry-seal{transform:scale(1.07) rotate(8deg)}
+    .music-dock{position:fixed;left:-240px;top:-240px;z-index:25;display:none;width:200px;height:200px;overflow:hidden;opacity:0;pointer-events:none}.music-dock.open{display:block}.music-dock iframe{display:block;width:200px;height:200px;border:0}
+    @media(max-width:680px){.site-shell{width:min(100% - 24px,550px)}.nav{min-height:67px;flex-wrap:wrap;padding:9px 0}.monogram{font-size:36px}.nav-links{gap:15px}.nav-links a{font-size:9px;letter-spacing:.09em}.music-button{padding:7px 10px;font-size:0}.music-button .music-icon{font-size:12px}.hero{min-height:min(815px,calc(100svh - 67px));padding:42px 15px 72px}.hero-card{padding:48px 18px 42px;outline-offset:5px}.overline{letter-spacing:.22em;font-size:9px}.hero h1{font-size:clamp(58px,16vw,85px)}.hero h1 span{font-size:20px}.ganesh{font-size:14px}.time-unit{min-width:0;flex:1;padding:12px 6px 10px}.time-label{font-size:8px;letter-spacing:.1em}.families{grid-template-columns:1fr;gap:0;margin-top:28px}.family{padding:11px 0}.family-divider{font-size:27px;line-height:1}.event-days{grid-template-columns:1fr}.venue-card{grid-template-columns:1fr}.map-link{justify-content:center}.section{padding:62px 0}.paper-panel{padding:37px 20px}.closing{padding-bottom:55px}.entry-screen:before{top:-38vw;right:-38vw}.entry-screen:after{bottom:-42vw;left:-40vw}.entry-card{padding:40px 18px 34px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   </style>
 </head>
 <body>
+  <div class="entry-screen" id="entryScreen" role="dialog" aria-modal="true" aria-label="Open the wedding invitation">
+    <div class="entry-card">
+      <p class="ganesh" lang="hi">॥ श्री गणेशाय नमः ॥</p>
+      <p class="overline">Wedding invitation</p>
+      <h1 class="entry-title">Praveen &amp; Manisha</h1>
+      <p class="entry-date">Monday · 23 November 2026</p>
+      <button class="entry-open" id="openInvite" type="button"><span class="entry-seal" aria-hidden="true">✦</span>Tap the seal to open</button>
+    </div>
+  </div>
   <div class="scene">
     <svg class="ornament-bg" viewBox="0 0 1000 1600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <defs>
@@ -64,7 +74,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a class="monogram" href="#home" aria-label="Praveen and Manisha, back to top">P<span style="font-size:.55em">&amp;</span>M</a>
         <div class="nav-links"><a href="#invitation">Invitation</a><a href="#events">Events</a><a href="#venue">Venue</a></div>
-        <button class="music-button" id="musicButton" type="button" aria-haspopup="dialog" aria-controls="musicModal"><span class="music-icon" aria-hidden="true">♫</span><span>Play our song</span></button>
+        <button class="music-button" id="musicButton" type="button" aria-controls="inviteSong" aria-pressed="false"><span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Play wedding music</span></button>
       </nav>
       <header class="hero" id="home">
         <div class="hero-card">
@@ -133,14 +143,7 @@
       <footer class="footer">Made with love for the beginning of forever.</footer>
     </div>
   </div>
-  <div class="music-modal" id="musicModal" role="dialog" aria-modal="true" aria-labelledby="musicTitle">
-    <div class="music-box">
-      <button class="music-close" id="closeMusic" type="button" aria-label="Close music player">×</button>
-      <h2 id="musicTitle">Aisa Milan (Suna Suna)</h2>
-      <iframe id="musicFrame" title="Aisa Milan (Suna Suna), official music video" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Official video from Times Music. Press play to listen.</p>
-    </div>
-  </div>
+  <audio id="inviteSong" src="music/indian-wedding-celebration.mp3" preload="none" loop></audio>
   <script>
     (() => {
       const weddingTime = new Date("2026-11-23T00:00:00+05:30").getTime();
@@ -159,24 +162,35 @@
       };
       updateCountdown();
       window.setInterval(updateCountdown, 1000);
-      const modal = document.getElementById("musicModal");
-      const frame = document.getElementById("musicFrame");
+      const entryScreen = document.getElementById("entryScreen");
+      const inviteSong = document.getElementById("inviteSong");
       const musicButton = document.getElementById("musicButton");
-      const closeButton = document.getElementById("closeMusic");
-      const openMusic = () => {
-        if (!frame.src || frame.src === location.href) frame.src = "https://www.youtube-nocookie.com/embed/J3Mgyg6I9CU?autoplay=1&rel=0";
-        modal.classList.add("open");
-        closeButton.focus();
+      const musicLabel = musicButton.querySelector(".music-label");
+      const playSong = () => {
+        inviteSong.play().then(() => {
+          musicButton.setAttribute("aria-pressed", "true");
+          musicLabel.textContent = "Stop song";
+        }).catch(() => {
+          musicButton.setAttribute("aria-pressed", "false");
+          musicLabel.textContent = "Add music file";
+        });
       };
-      const closeMusic = () => {
-        modal.classList.remove("open");
-        frame.src = "";
-        musicButton.focus();
+      const stopSong = () => {
+        inviteSong.pause();
+        inviteSong.currentTime = 0;
+        musicButton.setAttribute("aria-pressed", "false");
+        musicLabel.textContent = "Play wedding music";
       };
-      musicButton.addEventListener("click", openMusic);
-      closeButton.addEventListener("click", closeMusic);
-      modal.addEventListener("click", event => { if (event.target === modal) closeMusic(); });
-      document.addEventListener("keydown", event => { if (event.key === "Escape" && modal.classList.contains("open")) closeMusic(); });
+      document.getElementById("openInvite").addEventListener("click", () => {
+        playSong();
+        entryScreen.classList.add("opening");
+        window.setTimeout(() => { entryScreen.hidden = true; }, 650);
+      });
+      musicButton.addEventListener("click", () => {
+        if (!inviteSong.paused) stopSong();
+        else playSong();
+      });
+      inviteSong.addEventListener("ended", stopSong);
     })();
   </script>
 </body>
